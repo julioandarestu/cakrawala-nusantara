@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+      <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Cakrawala Nusantara</title>
+  </head>
+
+  <nav>
+    <div class="nav-wrap">
+      <div class="nav-icon">
+        <img src="img/navbar/iconNavbar.png" alt="icon" />
+      </div>
+      <div class="nav-logo">
+        <img src="img/navbar/logo.png" alt="logo" />
+      </div>
+      <div class="nav-contact">
+        <button id="contactButton">Contact Us</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="jumbotron">
+      <div class="jumbotron-up">
+        <h1>INFORMASI CUACA</h1>
+        <p>
+          Cakrawala Nusantara menginformasikan ramalan cuaca terkini dengan
+          informasi mendalam tentang kota-kota Indonesia, dari sejarah hingga
+          tempat wisata.
+        </p>
+      </div>
+    </section>
+
+    <section id="content">
+      <div id="loading"></div>
+      <div id="content-data" class="content-data">
+        <p>
+          Kami mempunyai fitur yang mempermudah Anda dalam mencari informasi
+          cuaca dan budaya dari kota yang ingin anda lihat. Silahkan Anda
+          masukan nama kota ditempat pencarian dibawah ini.
+        </p>
+        <input id="nama-kota" type="search" placeholder="" />
+        <button type="button" id="btn-search" onclick="getData()">
+          Search
+        </button>
+
+        <div id="content-main" class="content-main"></div>
+      </div>
+
+      <div id="content-city" class="content-city"></div>
+
+      <div id="daily-report" class="daily-report">
+        <h2 id="tittle-report">Prediksi Cuaca</h2>
+        <p class="label-daily">
+          Informasi perkiraan cuaca di kota
+          <span id="span-kota-daily">Jakarta</span> selama beberapa hari
+          kedepan.
+        </p>
+        <div id="nextDay-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</html>
